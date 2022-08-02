@@ -107,6 +107,7 @@
                                            Margin="10,5,0,0"/>
                             </StackPanel>
 
+                            <!-- Config Reader-->
                             <StackPanel Width="200" Height="40" Margin="1">
                                 <Button Height="35" Width="160">
                                     <StackPanel Orientation="Horizontal">
