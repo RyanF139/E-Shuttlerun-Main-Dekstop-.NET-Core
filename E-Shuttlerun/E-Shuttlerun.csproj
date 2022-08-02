@@ -9,6 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Class\**" />
+    <Compile Remove="Track_Finger\**" />
+    <EmbeddedResource Remove="Class\**" />
+    <EmbeddedResource Remove="Track_Finger\**" />
+    <None Remove="Class\**" />
+    <None Remove="Track_Finger\**" />
+    <Page Remove="Class\**" />
+    <Page Remove="Track_Finger\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Asset\Background Login.png" />
     <None Remove="Asset\Background.png" />
     <None Remove="Asset\Fitz Outdoor Training.png" />
@@ -28,11 +39,6 @@
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="0.2.2" />
     <PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Class\" />
-    <Folder Include="Track_Finger\" />
   </ItemGroup>
 
   <ItemGroup>
