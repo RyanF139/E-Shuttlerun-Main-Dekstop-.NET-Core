@@ -1,0 +1,290 @@
+﻿<UserControl x:Class="E_Shuttlerun.List_Seleksi.ViewSeleksi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:E_Shuttlerun.List_Seleksi"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="890" d:DesignWidth="1525">
+    <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
+        <materialDesign:TransitionerSlide                                
+                ClipToBounds="True">
+            <materialDesign:TransitionerSlide.OpeningEffects>
+                <materialDesign:TransitionEffect
+                        Kind="ExpandIn"
+                        Duration="0:0:0.8" />
+            </materialDesign:TransitionerSlide.OpeningEffects>
+            <Grid Margin="10">
+                <materialDesign:Card UniformCornerRadius="20" 
+                             Margin="20"
+                             materialDesign:ShadowAssist.ShadowDepth="Depth2">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="80"/>
+
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" Margin="15">
+                                <TextBlock Text="SETUKPA"
+                                           Name="titleLabel"
+                                           FontSize="24"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           FontFamily="Arial"
+                                           FontWeight="SemiBold"
+                                           FontStyle="Normal"/>
+                            </Grid>
+                            <Grid Grid.Column="1" Margin="10">
+                                <Button Name="btn_Kembali"
+                                        Click="btn_Kembali_Click"
+                                        HorizontalAlignment="Right" 
+                                        VerticalAlignment="Center"               
+                                        Background="WhiteSmoke"  
+                                        BorderBrush="Transparent"
+                                        Width="130" Height="40">
+                                    <Grid Width="110">
+                                        <materialDesign:PackIcon Kind="ArrowBack" Height="25" Width="25" VerticalAlignment="Center" Foreground="Black"/>
+                                        <TextBlock Text="Kembali" FontSize="15" Foreground="Black" Margin="40,7,0,6"/>
+                                    </Grid>
+                                </Button>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="440"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Column="0" Margin="10">
+                                <materialDesign:Card Height="39" Width="392"
+                                             Margin="10"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Center"
+                                             Background="#F3F5F9"
+                                             UniformCornerRadius="5"
+                                             materialDesign:ShadowAssist.ShadowDepth="Depth1">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="50"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid Grid.Column="0">
+                                            <materialDesign:PackIcon Kind="Search" 
+                                                         Height="30" Width="30"
+                                                         HorizontalAlignment="Center"
+                                                         VerticalAlignment="Center"                                                         
+                                                         Foreground="Gray"/>
+                                        </Grid>
+                                        <Grid Grid.Column="1">
+                                            <TextBox x:Name="Search" Width="330"
+                                               materialDesign:HintAssist.Hint="Cari berdasarkan nama peserta"                                                
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Center" KeyUp="Search_KeyUp"/>
+                                        </Grid>
+                                    </Grid>
+                                </materialDesign:Card>
+                            </Grid>
+                            <!--Grid Grid.Column="1" Margin="0">
+                                <materialDesign:Card Height="39" Width="99"
+                                             Margin="10"
+                                             HorizontalAlignment="Left"
+                                             VerticalAlignment="Center"
+                                             Background="#909DB5"
+                                             UniformCornerRadius="7"
+                                             materialDesign:ShadowAssist.ShadowDepth="Depth1">
+                                </materialDesign:Card>
+                                <Button Height="39" Width="99"
+                                Margin="10"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Background="Transparent"
+                                BorderBrush="Transparent"
+                                Foreground="White">
+                                    CARI
+
+                                </Button>
+                            </Grid-->
+                            <Grid Grid.Column="2" Margin="10">
+                                <materialDesign:Card Height="39" Width="200"
+                                             Margin="10"
+                                             HorizontalAlignment="Right"
+                                             VerticalAlignment="Center"
+                                             Background="#0460CD"
+                                             UniformCornerRadius="10"
+                                             materialDesign:ShadowAssist.ShadowDepth="Depth1">
+                                </materialDesign:Card>
+                                <Button Name="btn_ImportPeserta"
+                                        Click="btn_ImportPeserta_Click"
+                                        Height="39" Width="200"
+                                        Margin="10"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Center"
+                                        Background="Transparent"
+                                        BorderBrush="Transparent"
+                                        Foreground="White">
+                                    <Grid Width="165">
+                                        <materialDesign:PackIcon Kind="FileImport"
+                                                         Height="25" Width="25"
+                                                         HorizontalAlignment="Left"
+                                                         VerticalAlignment="Center"/>
+                                        <TextBlock Text="IMPORT EXCEL"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Center" Margin="50,0,0,0"/>
+                                    </Grid>
+
+                                </Button>
+                            </Grid>
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="600"/>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0" Margin="10" HorizontalAlignment="Stretch" DockPanel.Dock="Top">
+                                <DataGrid x:Name="dgvPeserta" ItemsSource="{Binding DataPeserta}" Background="#FFF" AutoGenerateColumns="False" CanUserAddRows="False" CanUserSortColumns="False" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                                    <DataGrid.Resources>
+                                        <Style BasedOn="{StaticResource {x:Type DataGridColumnHeader}}" TargetType="{x:Type DataGridColumnHeader}">
+                                            <Setter Property="Background" Value="#F3F5F9" />
+                                            <Setter Property="Foreground" Value="Black" />
+                                        </Style>
+                                    </DataGrid.Resources>
+                                    <DataGrid.Columns>
+                                        <DataGridTextColumn  Header="NO"    Binding="{Binding NO}" Width="2*" IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="{x:Type TextBlock}">
+                                                    <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Header="NAMA" Binding="{Binding NAMA}" Width="3*" IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="{x:Type TextBlock}">
+                                                    <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Header="NRP" Binding="{Binding NRP}" Width="3*" IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="{x:Type TextBlock}">
+                                                    <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Header="PANGKAT" Binding="{Binding PANGKAT}" Width="3*" IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="{x:Type TextBlock}">
+                                                    <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Header="JABATAN" Binding="{Binding JABATAN}" Width="3*" IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="{x:Type TextBlock}">
+                                                    <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Header="KORPS" Binding="{Binding KORPS}" Width="3*" IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="{x:Type TextBlock}">
+                                                    <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                        <DataGridTextColumn Header="TANGGAL LAHIR" Binding="{Binding TANGGAL_LAHIR}" Width="3*" IsReadOnly="True">
+                                            <DataGridTextColumn.ElementStyle>
+                                                <Style TargetType="{x:Type TextBlock}">
+                                                    <Setter Property="TextBlock.VerticalAlignment" Value="Center" />
+                                                </Style>
+                                            </DataGridTextColumn.ElementStyle>
+                                        </DataGridTextColumn>
+                                    </DataGrid.Columns>
+                                </DataGrid>
+                            </Grid>
+                        </Grid>
+
+                        <Grid Grid.Row="3" HorizontalAlignment="Right">
+                            <Grid Width="600" Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0" Margin="5">
+                                    <TextBlock Text="Show" 
+                                               VerticalAlignment="Center"
+                                               Margin="0,11,0,0"/>
+                                </Grid>
+                                <Grid Grid.Column="1" Margin="5">
+                                    <ComboBox   Name="cbNumberOfRecords"
+                                                SelectionChanged="cbNumberOfRecords_SelectionChanged"
+                                                SelectedIndex="0"
+                                                materialDesign:HintAssist.Hint="Entries"
+                                                ItemsSource="{Binding LongListToTestComboVirtualization}"
+                                                Style="{StaticResource MaterialDesignFloatingHintComboBox}"
+                                                VerticalAlignment="Center"
+                                                HorizontalAlignment="Left"
+                                                Height="35" Width="80"/>
+
+                                </Grid>
+
+                                <Grid Grid.Column="2" >
+                                    <Button Name="btn_Previous"
+                                            Click="btn_Previous_Click"
+                                            Width="80" Height="35" Margin="30,5,0,0"
+                                            HorizontalAlignment="Left"
+                                            Style="{StaticResource MaterialDesignPaperDarkButton}"                                                                                      
+                                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                                            Content="Previous" FontSize="12"/>
+                                    <Button Name="btn_First"
+                                            Click="btn_First_Click"
+                                            Width="50" Height="35" Margin="0,5,60,0"
+                                            HorizontalAlignment="Right"
+                                            Style="{StaticResource MaterialDesignPaperDarkButton}"                                                                                      
+                                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                                            FontSize="12">
+                                        <materialDesign:PackIcon Kind="ChevronDoubleLeft"/>
+                                    </Button>
+                                </Grid>
+                                <Grid Grid.Column="3" >
+                                    <Button Name="btn_Next"
+                                            Click="btn_Next_Click"
+                                            Width="80" Height="35" Margin="0,5,60,0" 
+                                            HorizontalAlignment="Right"
+                                            Style="{StaticResource MaterialDesignPaperDarkButton}"                                           
+                                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                                            Content="Next" FontSize="12"/>
+                                    <Button Name="btn_Last"
+                                            Click="btn_Last_Click"
+                                            Width="50" Height="35" Margin="30,5,0,0"
+                                            HorizontalAlignment="Left"
+                                            Style="{StaticResource MaterialDesignPaperDarkButton}"                                                                                        
+                                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" 
+                                            FontSize="12">
+                                        <materialDesign:PackIcon Kind="ChevronDoubleRight"/>
+                                    </Button>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </materialDesign:Card>
+            </Grid>
+        </materialDesign:TransitionerSlide>
+    </materialDesign:Transitioner>
+
+</UserControl>
+

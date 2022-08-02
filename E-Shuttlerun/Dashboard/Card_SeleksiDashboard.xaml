@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="E_Shuttlerun.Dashboard.Card_SeleksiDashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:E_Shuttlerun.Dashboard"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             FontFamily="{DynamicResource MaterialDesignFont}" 
+             d:DesignHeight="60" d:DesignWidth="240">
+    <Grid Margin="10">
+        <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
+            <materialDesign:TransitionerSlide                                
+                                  ClipToBounds="True">
+                <materialDesign:TransitionerSlide.OpeningEffects>
+                    <materialDesign:TransitionEffect
+                                    Kind="ExpandIn"
+                                    Duration="0:0:0.8" />
+                </materialDesign:TransitionerSlide.OpeningEffects>
+                <Grid Width="210" Height="40">
+                    <Button Name="btn_ViewDashboard"
+                            Click="btn_ViewDashboard_Click"
+                            materialDesign:ShadowAssist.ShadowDepth="Depth4"
+                            Style="{StaticResource MaterialDesignRaisedButton}"
+                            Height="40" Width="210"
+                            materialDesign:ButtonAssist.CornerRadius="25 25 0 0">
+                        <TextBlock Text="{Binding nama}"
+                       Name="txtNamaSeleksi"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+                    </Button>
+                </Grid>
+            </materialDesign:TransitionerSlide>
+        </materialDesign:Transitioner>
+    </Grid>
+</UserControl>

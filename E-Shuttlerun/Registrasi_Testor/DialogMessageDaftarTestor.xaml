@@ -1,0 +1,78 @@
+﻿<Window x:Class="E_Shuttlerun.Registrasi_Testor.DialogMessageDaftarTestor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        WindowStyle="None"  
+        Topmost="True"
+        Loaded="Window_Loaded"
+        Left="540" Top="190"
+        AllowsTransparency="True"
+        Background="Transparent"
+        WindowStartupLocation="Manual"
+        Title="DialogMessageDaftarTestor" Height="75" Width="740">
+    <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
+        <materialDesign:TransitionerSlide                                
+                ClipToBounds="True">
+            <materialDesign:TransitionerSlide.OpeningEffects>
+                <materialDesign:TransitionEffect
+                        Kind="SlideInFromBottom"
+                        Duration="0:0:0.6" />
+            </materialDesign:TransitionerSlide.OpeningEffects>
+            <Grid Height="55" Width="720">
+                <materialDesign:Card Background="#006D23" Width="100"
+                             HorizontalAlignment="Left"
+                             UniformCornerRadius="10">
+                </materialDesign:Card>
+                <materialDesign:Card Margin="5,0,0,0"
+                             Background="#FFFFFF"
+                             UniformCornerRadius="8">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <materialDesign:PackIcon Kind="CheckboxMarkedCircle"
+                                         Height="24" Width="24" Margin="15,0,0,0"
+                                         Foreground="#006d23"
+                                         VerticalAlignment="Center"/>
+                        <TextBlock Name="TextMessage"
+                               Text="Text Message"
+                               Margin="45,0,0,0" 
+                               Foreground="#414D63"
+                               VerticalAlignment="Center" HorizontalAlignment="Left"
+                               FontFamily="Arial" FontSize="14" FontWeight="Medium"/>
+                        <StackPanel Height="20" Width="20" Margin="680,0,0,0"
+                                VerticalAlignment="Center" HorizontalAlignment="Left">
+                            <Grid Height="20" Width="20" 
+                              HorizontalAlignment="Center" 
+                              VerticalAlignment="Center">
+                                <materialDesign:PackIcon Kind="CloseCircle" 
+                                                     Height="Auto" Width="20" 
+                                                     VerticalAlignment="Stretch" 
+                                                     Foreground="#5A657C"/>
+
+                                <Grid Height="20" Width="20" 
+                                  HorizontalAlignment="Center"
+                                  VerticalAlignment="Center">
+                                    <Button Style="{StaticResource MaterialDesignFlatButton}"                            
+                                        Name="btn_CloseMessageTestor"
+                                        Click="btn_CloseMessageTestor_Click"
+                                        Height="20" Width="20"
+                                        Foreground="Gray"/>
+                                </Grid>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </materialDesign:Card>
+            </Grid>
+        </materialDesign:TransitionerSlide>
+    </materialDesign:Transitioner>
+</Window>

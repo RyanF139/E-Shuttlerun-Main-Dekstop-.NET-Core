@@ -1,0 +1,188 @@
+﻿<UserControl x:Class="E_Shuttlerun.Dashboard.Card_DashboardInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:E_Shuttlerun.Dashboard"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             FontFamily="{DynamicResource MaterialDesignFont}"
+             d:DesignHeight="314" d:DesignWidth="904">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="420"/>
+            <ColumnDefinition Width="242"/>
+            <ColumnDefinition Width="242"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Card Jumlah Peserta -->
+        <Grid Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
+                <materialDesign:TransitionerSlide                                
+                ClipToBounds="True">
+                    <materialDesign:TransitionerSlide.OpeningEffects>
+                        <materialDesign:TransitionEffect
+                        Kind="ExpandIn"
+                        Duration="0:0:0.8" />
+                    </materialDesign:TransitionerSlide.OpeningEffects>
+                    <Grid Margin="10">
+                        <materialDesign:Card Height="250" Width="400"
+                                 HorizontalAlignment="Center"
+                                 VerticalAlignment="Bottom"
+                                 UniformCornerRadius="20">
+                            <Grid>
+                                <TextBlock Text="Jumlah Peserta" 
+                               Margin="0,25,50,0"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Right"
+                               FontFamily="Arial"
+                               FontStyle="Italic"
+                               FontWeight="SemiBold"
+                               FontSize="24"
+                               Foreground="#7B809A"/>
+                                <materialDesign:Card Height="1.5" Width="240"
+                                                     Margin="0,70,20,0"
+                                                     VerticalAlignment="Top"
+                                                     HorizontalAlignment="Right"
+                                                     Background="#B9BBC3"/>
+                                <TextBlock Name="LabelJumlahPeserta" Text="000"
+                                           Margin="180,100,0,0"
+                                           HorizontalAlignment="Left"
+                                           VerticalAlignment="Top"
+                                           FontSize="100" FontFamily="Arial"
+                                           FontStyle="Normal" Foreground="#525356"/>
+                            </Grid>
+                        </materialDesign:Card>
+                        <materialDesign:Card Height="100" Width="100" Margin="34,0,0,0"
+                                 HorizontalAlignment="Left"
+                                 VerticalAlignment="Top"
+                                 UniformCornerRadius="100"
+                                 Background="#021E7D">
+                            <materialDesign:PackIcon Kind="Account" Width="54" Height="54"
+                                         Foreground="White"
+                                         HorizontalAlignment="Center"
+                                         VerticalAlignment="Center"/>
+                        </materialDesign:Card>
+                    </Grid>
+                </materialDesign:TransitionerSlide>
+            </materialDesign:Transitioner>
+        </Grid>
+
+        <!-- Card Jumlah Antrian -->
+        <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
+                <materialDesign:TransitionerSlide                                
+                ClipToBounds="True">
+                    <materialDesign:TransitionerSlide.OpeningEffects>
+                        <materialDesign:TransitionEffect
+                        Kind="ExpandIn"
+                        Duration="0:0:0.8" />
+                    </materialDesign:TransitionerSlide.OpeningEffects>
+
+                    <Grid Margin="10" Height="160" VerticalAlignment="Bottom">
+                        <materialDesign:Card Height="134" Width="222"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Bottom"
+                                     UniformCornerRadius="12">
+                            <Grid>
+                                <TextBlock Text="Jumlah Antrian" 
+                               Margin="0,10,20,0"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Right"
+                               FontFamily="Arial"
+                               FontStyle="Italic"
+                               FontWeight="SemiBold"
+                               FontSize="15"
+                               Foreground="#7B809A"/>
+                                <materialDesign:Card Height="1.5" Width="130"
+                                                     Margin="0,40,10,0"
+                                                     VerticalAlignment="Top"
+                                                     HorizontalAlignment="Right"
+                                                     Background="#B9BBC3"/>
+                                <TextBlock Name="LabelJumlahAntrian" Text="000"
+                                   Margin="100,50,0,0"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Top"
+                                   FontSize="60" FontFamily="Arial"
+                                   FontStyle="Normal" Foreground="#525356"/>
+                            </Grid>
+                        </materialDesign:Card>
+                        <materialDesign:Card Height="65" Width="65" Margin="15,0,0,0"
+                                 HorizontalAlignment="Left"
+                                 VerticalAlignment="Top"
+                                 UniformCornerRadius="100"
+                                 Background="#8253E7">
+                            <materialDesign:PackIcon Kind="AccountClock" Width="30" Height="30"
+                                         Foreground="White"
+                                         HorizontalAlignment="Center"
+                                         VerticalAlignment="Center"/>
+                        </materialDesign:Card>
+
+                    </Grid>
+
+                </materialDesign:TransitionerSlide>
+            </materialDesign:Transitioner>
+        </Grid>
+
+        <!-- Card Selesai -->
+        <Grid Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <materialDesign:Transitioner SelectedIndex="0" AutoApplyTransitionOrigins="True">
+                <materialDesign:TransitionerSlide                                
+                ClipToBounds="True">
+                    <materialDesign:TransitionerSlide.OpeningEffects>
+                        <materialDesign:TransitionEffect
+                        Kind="ExpandIn"
+                        Duration="0:0:0.8" />
+                    </materialDesign:TransitionerSlide.OpeningEffects>
+
+                    <Grid Margin="10" Height="160" VerticalAlignment="Bottom">
+                        <materialDesign:Card Height="134" Width="222"
+                                     HorizontalAlignment="Center"
+                                     VerticalAlignment="Bottom"
+                                     UniformCornerRadius="12">
+                            <Grid>
+                                <TextBlock Text="Selesai" 
+                               Margin="0,10,45,0"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Right"
+                               FontFamily="Arial"
+                               FontStyle="Italic"
+                               FontWeight="SemiBold"
+                               FontSize="15"
+                               Foreground="#7B809A"/>
+                                <materialDesign:Card Height="1.5" Width="130"
+                                                     Margin="0,40,10,0"
+                                                     VerticalAlignment="Top"
+                                                     HorizontalAlignment="Right"
+                                                     Background="#B9BBC3"/>
+                                <TextBlock Name="LabelSelesai" Text="000"
+                                   Margin="100,50,0,0"
+                                   HorizontalAlignment="Left"
+                                   VerticalAlignment="Top"
+                                   FontSize="60" FontFamily="Arial"
+                                   FontStyle="Normal" Foreground="#525356"/>
+                            </Grid>
+                        </materialDesign:Card>
+                        <materialDesign:Card Height="65" Width="65" Margin="15,0,0,0"
+                                 HorizontalAlignment="Left"
+                                 VerticalAlignment="Top"
+                                 UniformCornerRadius="100"
+                                 Background="#73ED39">
+                            <materialDesign:PackIcon Kind="AccountCheck" Width="30" Height="30"
+                                         Foreground="White"
+                                         HorizontalAlignment="Center"
+                                         VerticalAlignment="Center"/>
+                        </materialDesign:Card>
+
+                    </Grid>
+                </materialDesign:TransitionerSlide>
+            </materialDesign:Transitioner>
+        </Grid>
+        
+    </Grid>
+</UserControl>

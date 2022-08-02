@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "h4vpGuyWTML6XvfkWe+fPoYIZfOVykC8xdQqZTwBwoESehgse7NkyWJtkyBscgNpwNfbwIF5UwqLCoBMh6v/QA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ryan\\Documents\\Project TCB\\Project 2022\\E-Shuttlerun\\Main Project\\E-Shuttlerun_V.01\\3. E-ShuttleDesktop\\E-Shuttlerun\\E-Shuttlerun\\E-Shuttlerun.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ryan\\.nuget\\packages\\controlzex\\4.3.0\\controlzex.4.3.0.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\mahapps.metro\\2.0.0\\mahapps.metro.2.0.0.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\materialdesigncolors\\2.0.6\\materialdesigncolors.2.0.6.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\materialdesignthemes\\4.5.0\\materialdesignthemes.4.5.0.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\materialdesignthemes.mahapps\\0.2.2\\materialdesignthemes.mahapps.0.2.2.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1001\\microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Ryan\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,151 @@
+﻿<UserControl x:Class="E_Shuttlerun.Main_App.MenuBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:E_Shuttlerun.Main_App"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d"
+             TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+             TextElement.FontWeight="Regular"
+             TextElement.FontSize="13"
+             TextOptions.TextFormattingMode="Ideal"
+             TextOptions.TextRenderingMode="Auto"
+             FontFamily="{DynamicResource MaterialDesignFont}" 
+             d:DesignHeight="690" d:DesignWidth="277">
+
+    <Grid Height="690" Width="277" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+        
+        <!-- Dashboard -->
+        <materialDesign:Card Name="CardDashboard"
+                             Background="Transparent"
+                             Height="40" Width="230"
+                             UniformCornerRadius="8"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="16,20,0,0">
+            <StackPanel Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Name="IconViewDashboard"  Kind="ViewDashboard" Height="Auto" Width="25" Margin="13,8,0,8" VerticalAlignment="Stretch" Foreground="White"/>
+                    <TextBlock Name="LabelDashboard" Text="Dashboard" FontSize="14" Foreground="White" Margin="60,12,0,12"/>
+                    <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button                
+                                Style="{StaticResource MaterialDesignFlatButton}"                            
+                                Name="btn_Dashboard"
+                                Click="btn_Dashboard_Click"
+                                ToolTip="View Dashboard"
+                                Height="40"
+                                Width="230"
+                                Foreground="White"/>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+        </materialDesign:Card>
+
+        <!-- Run Activity -->
+        <materialDesign:Card Name="CardRun"
+                             Height="40" Width="230"
+                             Background="Transparent"
+                             UniformCornerRadius="8"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="16,70,0,0">
+            <StackPanel Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Name="IconRun" Kind="ShoeRunning" Height="20" Width="20" Margin="13,8,0,8" VerticalAlignment="Stretch" Foreground="White"/>
+                    <TextBlock Name="LabelRun" Text="Run" FontSize="14" Foreground="White" Margin="60,12,0,12"/>
+                    <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button 
+                                Style="{StaticResource MaterialDesignFlatButton}"
+                                Name="btn_Run"
+                                Click="btn_Run_Click"
+                                ToolTip="View Run Activty"
+                                Height="40" Width="230"
+                                Foreground="White"/>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+        </materialDesign:Card>
+
+        <!-- Registrasi -->
+        <materialDesign:Card Name="CardRegistrasi"
+                             Height="40" Width="230"
+                             Background="Transparent"
+                             UniformCornerRadius="8"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="16,120,0,0">
+            <StackPanel Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon Name="IconRegistrasi" Kind="Register" Height="20" Width="20" Margin="13,8,0,8" VerticalAlignment="Stretch" Foreground="White"/>
+                    <TextBlock Name="LabelRegistrasi" Text="Regsitrasi Testor" FontSize="14" Foreground="White" Margin="60,12,0,12"/>
+                    <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button 
+                                Style="{StaticResource MaterialDesignFlatButton}"
+                                Name="btn_Registrasi"
+                                Click="btn_Registrasi_Click"
+                                ToolTip="Registrasi Testor"
+                                Height="40" Width="230"
+                                Foreground="White"/>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+        </materialDesign:Card>
+
+        <!-- Daftar Capaian -->
+        <materialDesign:Card Name="CardDaftarCapaian"
+                             Height="40" Width="230"
+                             Background="Transparent"
+                             UniformCornerRadius="8"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="16,170,0,0">
+            <StackPanel Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon x:Name="IconDaftarCapaian" Kind="FileDocumentBox" Height="20" Width="20" Margin="12,8,0,8" VerticalAlignment="Stretch" Foreground="White"/>
+                    <TextBlock Name="LabelDaftarCapaian" Text="Daftar Capaian" FontSize="14" Foreground="White" Margin="60,12,0,12"/>
+                    <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button 
+                                Style="{StaticResource MaterialDesignFlatButton}"
+                                Name="btn_DaftarCapaian"
+                                Click="btn_DaftarCapaian_Click"
+                                ToolTip="View Daftar Capaian"
+                                Height="40" Width="230"
+                                Foreground="White"/>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+        </materialDesign:Card>
+
+
+        <!-- Tambah Seleksi -->
+        <materialDesign:Card Name="CardListSelski"
+                             Height="40" Width="230"
+                             Background="Transparent"
+                             UniformCornerRadius="8"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             Margin="16,220,0,0">
+            <StackPanel Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <materialDesign:PackIcon x:Name="IconListSeleksi" Kind="FileDocumentAdd" Height="20" Width="20" Margin="12,8,0,8" VerticalAlignment="Stretch" Foreground="White" />
+                    <TextBlock Name="LabelListSeleksi" Text="Seleksi" FontSize="14" Foreground="White" Margin="60,12,0,12" />
+                    <Grid Height="40" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button 
+                                Style="{StaticResource MaterialDesignFlatButton}"
+                                Name="btn_ListSeleksi"
+                                Click="btn_ListSeleksi_Click"
+                                ToolTip="View List Seleksi"
+                                Height="40" Width="230"
+                                Foreground="White"/>
+                    </Grid>
+                </Grid>
+            </StackPanel>
+        </materialDesign:Card>
+
+
+
+    </Grid>
+
+
+</UserControl>

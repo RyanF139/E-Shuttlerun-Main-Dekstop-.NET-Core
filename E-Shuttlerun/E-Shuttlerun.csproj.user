@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Daftar_Capaian\Card_SeleksiDaftarCapaian.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Daftar_Capaian\MainDaftarCapaian.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Daftar_Capaian\ViewDaftarCapaian.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dashboard\Card_DashboardInfo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dashboard\Card_SeleksiDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Dashboard\MainDashboard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Data_Grid\dgv_NilaiTerbaik.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="List_Seleksi\Card_SeleksiListSeleksi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="List_Seleksi\Form_EditSeleksi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="List_Seleksi\Form_TambahSeleksi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="List_Seleksi\MainListSeleksi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="List_Seleksi\ViewSeleksi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login\Card_Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login\Card_NewPassword.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login\MainLogin.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Main_App\MainApp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Main_App\MenuBar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registrasi_Testor\Card_EditTestor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registrasi_Testor\Card_RegistrasiTestor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registrasi_Testor\Card_SeleksiRegistrasi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registrasi_Testor\DialogMessageDaftarTestor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registrasi_Testor\MainRegistrasi.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Registrasi_Testor\ViewRegistrasiTestor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Run\Card_SeleksiRun.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Run\MainRun.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Daftar_Capaian\Card_SeleksiDaftarCapaian.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Daftar_Capaian\MainDaftarCapaian.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Daftar_Capaian\ViewDaftarCapaian.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dashboard\Card_DashboardInfo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dashboard\Card_SeleksiDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dashboard\MainDashboard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Data_Grid\dgv_NilaiTerbaik.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="List_Seleksi\Card_SeleksiListSeleksi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="List_Seleksi\Form_EditSeleksi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="List_Seleksi\Form_TambahSeleksi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="List_Seleksi\MainListSeleksi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="List_Seleksi\ViewSeleksi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\Card_Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\Card_NewPassword.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\MainLogin.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Main_App\MainApp.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Main_App\MenuBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registrasi_Testor\Card_EditTestor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registrasi_Testor\Card_RegistrasiTestor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registrasi_Testor\Card_SeleksiRegistrasi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registrasi_Testor\DialogMessageDaftarTestor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registrasi_Testor\MainRegistrasi.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Registrasi_Testor\ViewRegistrasiTestor.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Run\Card_SeleksiRun.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Run\MainRun.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
